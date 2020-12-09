@@ -50,7 +50,7 @@ function mcfly_prompt_command {
   $MCFLY_PATH add --exit ${exit_code} --append-to-histfile
   # Clear the in-memory history and reload it from $MCFLY_HISTORY
   # (to remove instances of '#mcfly: ' from the local session history).
-  history -cr ${MCFLY_HISTORY}
+  ## history -cr ${MCFLY_HISTORY}
   return ${exit_code} # Restore the original exit code by returning it.
 }
 
